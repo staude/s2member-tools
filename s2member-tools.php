@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     s2Member Tools
  * Plugin URI:      http://staude.net/wordpress/s2member-tools
- * Description:     Add some features to s2member plugin
+ * Description:     Add some features to the s2member plugin
  * Author:          Frank Staude
  * Version:         0.1
  * Licence:         GPLv3
@@ -209,7 +209,7 @@ class S2Member_Tools {
 	 *		Name, PluginURI, Version, Description, Author, AuthorURI, TextDomain, DomainPath, Network, Title
 	 * @return  string
 	 */
-	private static function get_plugin_data( $value = 'Version' ) {
+	public static function get_plugin_data( $value = 'Version' ) {
 
 		if ( ! function_exists( 'get_plugin_data' ) )
 			require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
